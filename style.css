@@ -50,6 +50,10 @@ ul li a {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* hero */
 .hero {
   background-image: url("../images/mobile/image-header.jpg");
@@ -109,6 +113,7 @@ header nav ul li a {
   font-size: 1.5rem;
   cursor: pointer;
   display: block;
+  z-index: 4;
 }
 
 .navbtn {
@@ -332,8 +337,11 @@ header nav ul li a {
 /* footer */
 .footer {
   background-color: #90d4c6;
-  text-align: center;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer svg {
@@ -350,7 +358,6 @@ header nav ul li a {
 .footer nav ul {
   display: flex;
   gap: 3rem;
-  justify-content: center;
 }
 
 .footer nav ul li a {
@@ -362,7 +369,6 @@ header nav ul li a {
   display: flex;
   gap: 2rem;
   color: var(--dark-desaturated-cyan);
-  justify-content: center;
 }
 
 .footer .socials i {
